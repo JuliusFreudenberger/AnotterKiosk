@@ -22,11 +22,11 @@ label-id: 3BC7D7CD-4BF8-4E92-AAEB-2ACD5F8D05AA
 device: x86kiosk.img
 unit: sectors
 first-lba: 34
-last-lba: 12779484
+last-lba: 12582800
 sector-size: 512
 
 x86kiosk.img1 : start=        2048, size=     2095105, type=EBD0A0A2-B9E5-4433-87C0-68B6B72699C7, uuid=9C99F1BB-11A8-4BB5-82C2-555D7A38F85C, name="EFI system partition"
-x86kiosk.img2 : start=     2099200, size=    10678270, type=0FC63DAF-8483-4772-8E79-3D69D8477DE4, uuid=93A9AB2C-BC29-4C6C-B6DD-1B4EDDED9A1E, name="Linux filesystem"
+x86kiosk.img2 : start=     2099200, size=    10483600, type=0FC63DAF-8483-4772-8E79-3D69D8477DE4, uuid=93A9AB2C-BC29-4C6C-B6DD-1B4EDDED9A1E, name="Linux filesystem"
 END
 )
 echo "${PARTLAYOUT}" | sfdisk x86kiosk.img
